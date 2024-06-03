@@ -54,8 +54,8 @@ const Cart = () => {
         setData(data.filter((e)=>e.id !== id))
   }
   return (
-    <div className="w-75 mx-auto ">
-        <h1 className="text-center mt-3">Products</h1>
+    <div className="w-75 mx-auto  mt-5">
+        
       {data.map((element, index) => {
         return (
           <div className="contain px-4" key={index}>
@@ -123,15 +123,15 @@ const Cart = () => {
             <hr />
             <div className="row">
               <div className="col-6">
-                <h5 className="text-secondary px-1 pb-3">Total</h5>
+                <h5 className="text-dark px-1 pb-3">Total</h5>
               </div>
               <div className="col-6">
                 <h5 className="text-end">${element.thisprice===undefined?element.price:element.thisprice}</h5>
               </div>
               
             </div>
-            <div className="d-flex ">
-                <div className="ms-auto text-danger">Get Daily Cash With Nespola Card</div>
+            <div className="d-flex">
+                <div className="ms-auto text-danger mb-5">Get Daily Cash With Nespola Card</div>
               </div>
           </div>
         );
