@@ -7,22 +7,17 @@ const Cart = () => {
 
   const totalQuantity = cart.reduce((total, item) => total + item.quantity, 0);
   const totalAmount = cart.reduce((total, item) => total + item.price * item.quantity, 0);
-//   if (cart.length === 0) {
-//     return <div className="cart-empty">No items in cart</div>;
-//   }
+
   return (
     <div className="cart">
-     <h2>Shopping Cart</h2>
       <div className="cart-items">
-
-      
         {cart.map(item => (
           <div key={item.id} className="cart-item card">
             <div className='row'>
                 <div className='col-sm-4'>
-                    <img src={item.thumbnail} alt={item.name} />
+                    <img className='cart-item-image' src={item.thumbnail} alt={item.name} />
                 </div>
-                <div className='col-sm-4 d-block'>        
+                <div className='col-sm-4  d-block'>        
                     <h3>{item.title}</h3>
                     <p>{item.description}</p>
                     <h4><b>${item.price}</b></h4>
@@ -36,7 +31,6 @@ const Cart = () => {
               <button className="btn btn-danger" onClick={() => removeFromCart(item.id)}>Remove</button>
             </div>
         </div>
-    
         ))}
       </div>
       <div className="cart-summary">

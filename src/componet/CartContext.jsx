@@ -1,3 +1,4 @@
+// src/components/CartContext.js
 import React, { createContext, useReducer, useContext } from 'react';
 
 const CartContext = createContext();
@@ -73,3 +74,5 @@ export const CartProvider = ({ children }) => {
 };
 
 export const useCart = () => useContext(CartContext);
+
+

@@ -10,7 +10,7 @@
             "stock": 94,
             "brand": "Apple",
             "category": "smartphones",
-            "thumbnail": "https://media.istockphoto.com/id/503742830/photo/rose-gold-apple-iphone-6s-with-ios-9-dynamic-wallpaper.jpg?s=612x612&w=0&k=20&c=F_WLgYDOAJrWgIxwt4Q8kkcZJjdRQ9eK_Rph_PRCDSU=",
+            "thumbnail": "/images/i9.png",
             "images": [
                 "https://i.dummyjson.com/data/products/1/1.jpg",
                 "https://i.dummyjson.com/data/products/1/2.jpg",
@@ -29,7 +29,7 @@
             "stock": 34,
             "brand": "Apple",
             "category": "smartphones",
-            "thumbnail": "https://www.freeiconspng.com/thumbs/iphone-x-pictures/new-iphone-x-photo-18.png",
+            "thumbnail": "/images/ix.png",
             "images": [
                 "https://i.dummyjson.com/data/products/2/1.jpg",
                 "https://i.dummyjson.com/data/products/2/2.jpg",
@@ -47,7 +47,7 @@
             "stock": 36,
             "brand": "Samsung",
             "category": "smartphones",
-            "thumbnail": "https://www.pngitem.com/pimgs/m/570-5709127_samsung-s9-samsung-galaxy-s9-plus-hd-png.png",
+            "thumbnail": "/images/universe.jpg",
             "images": [
                 "https://i.dummyjson.com/data/products/3/1.jpg"
             ]
@@ -62,7 +62,7 @@
             "stock": 123,
             "brand": "OPPO",
             "category": "smartphones",
-            "thumbnail": "https://www.oppo.com/content/dam/oppo/common/mkt/v2-2/elsa/f19-pro-plus/navigation/F19-navigation-gray-v2.png",
+            "thumbnail": "/images/f19.png",
             "images": [
                 "https://i.dummyjson.com/data/products/4/1.jpg",
                 "https://i.dummyjson.com/data/products/4/2.jpg",
@@ -81,7 +81,7 @@
             "stock": 32,
             "brand": "Huawei",
             "category": "smartphones",
-            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ365mDWTnhQADub188_YyD9s99Ub9GBhdSPQ&s",
+            "thumbnail": "/images/p30.png",
             "images": [
                 "https://i.dummyjson.com/data/products/5/1.jpg",
                 "https://i.dummyjson.com/data/products/5/2.jpg",
