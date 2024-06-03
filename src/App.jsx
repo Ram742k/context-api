@@ -1,31 +1,45 @@
-import React from 'react';
-import { CartProvider } from './componet/CartContext';
-import ProductList from './componet/ProductList';
+import React, { createContext, useState } from 'react';
 import Cart from './componet/Cart';
+import './Cart.css';
 
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.css';
 
-function App() {
+
+export const myContext = createContext('');
+const App = () => {
+  const products =[
+    {
+      "products": [
+          {
+            "id": 2,
+            "title": "iPhone X",
+            "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+            "price": 899,
+            "discountPercentage": 17.94,
+            "rating": 4.44,
+            "stock": 34,
+            "brand": "Apple",
+            "category": "smartphones",
+            "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+            "images": [
+                "https://preview.free3d.com/img/2017/12/2140162101740570270/1cmeogfs.jpg"
+            ]
+          },
+          
+      ]
+  }
+  ]
+
+  const [data,setData] = useState(products[0].products);
+
+  console.log(data)
   return (
-    <CartProvider>
-      <div className="App">
-        <h1 className='text-center mt-5'>Shopping Cart</h1>
-        <main>
-          <div className='row'>
-            <div className='col-md-6 col-lg-8 '>
-                <h5>Product</h5>
-                <ProductList />
-              </div>
-              <div className='col-md-6 col-lg-4'>
-                <h5>Shopping Cart</h5>
-                <Cart />
-              </div>
-          </div>
-        </main>
-      </div>
-    </CartProvider>
+    <div>
+      <myContext.Provider value={[data,setData]}>
+        <Cart/>
+      </myContext.Provider>
+      
+    </div>
   );
-}
+};
 
 export default App;

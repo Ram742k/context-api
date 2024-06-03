@@ -19,21 +19,11 @@ The objective of this task is to create a cart page using React that displays it
 ├── src/
 │ ├── components/
 │ │ ├── Cart.js
-│ │ ├── CartItem.js
-│ │ ├── CartContext.js
-│ │ ├── CartProvider.js
 │ ├── App.js
 │ ├── App.css
 │ ├── Cart.css
 │ └── index.js
 └── README.md
-
-## 📦 Components Overview
-
-- **Cart.js**: Main cart component that renders the list of cart items and the cart summary.
-- **CartItem.js**: Component for each individual item in the cart.
-- **CartContext.js**: Context file to create and export the cart context.
-- **CartProvider.js**: Context provider that manages the state and provides functions to update quantities and totals.
 
 ## 🛠️ Technologies & Tools
 
