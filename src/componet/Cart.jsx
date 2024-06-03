@@ -14,21 +14,21 @@ const Cart = () => {
         {cart.map(item => (
           <div key={item.id} className="cart-item card">
             <div className='row'>
-                <div className='col-sm-4'>
+                <div className='col-md-12 col-lg-12 col-xl-4'>
                     <img className='cart-item-image' src={item.thumbnail} alt={item.name} />
                 </div>
-                <div className='col-sm-4  d-block'>        
+                <div className='col-md-12  col-lg-12 col-xl-4 d-block'>        
                     <h3>{item.title}</h3>
                     <p>{item.description}</p>
                     <h4><b>${item.price}</b></h4>
                 </div>
-                <div className="col-sm-2">
+                <div className="col-md-12  col-lg-12 col-xl-4">
                     
                     <button className="btn btn-primary" onClick={() => decreaseQuantity(item.id)}>-</button>
                     <span>&nbsp;{item.quantity}&nbsp;</span>
                     <button className="btn btn-primary" onClick={() => increaseQuantity(item.id)}>+</button>
                 </div>
-              <button className="btn btn-danger" onClick={() => removeFromCart(item.id)}>Remove</button>
+              <button className="btn btn-light mt-2" onClick={() => removeFromCart(item.id)}>Remove</button>
             </div>
         </div>
         ))}
